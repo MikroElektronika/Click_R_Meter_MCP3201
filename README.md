@@ -1,6 +1,6 @@
 ![MikroE](http://www.mikroe.com/img/designs/beta/logo_small.png)
 
-![Diff Pressure Click](http://cdn.mikroe.com/img/click/r-meter-click/r-meter.png)
+![Diff Pressure Click](http://cdn.mikroe.com/img/click/r-meter/gallery/r-meter-click-02.png)
 
 ---
 [Product Page](http://www.mikroe.com/click/r-meter/)

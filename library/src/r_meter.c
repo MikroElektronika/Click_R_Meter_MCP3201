@@ -107,7 +107,7 @@ uint16_t r_meter_get_volts( void )
 
 float r_meter_get_ohms( void )
 {
-    Rx = 272;
+    Rx = 236;
     S1 = 1;
     S2 = 0;
     S3 = 0;
@@ -121,7 +121,7 @@ float r_meter_get_ohms( void )
     }
     else if (Voltage > 2000 )
     {
-        Rx = 10010;
+        Rx = 1100;
         S1 = 0;
         S2 = 1;
         S3 = 0;
@@ -136,7 +136,7 @@ float r_meter_get_ohms( void )
     }
     if (Voltage > 2000 )
     {
-        Rx = 100100;
+        Rx = 95000;
         S1 = 0;
         S2 = 0;
         S3 = 1;
@@ -146,6 +146,12 @@ float r_meter_get_ohms( void )
         if (Voltage < 2000 )
         {
             calculate_r();
+            if( Rm > 300000)
+            {
+                Rx = 88000;
+                calculate_r();
+                return Rm;
+            }
             return Rm;
         }
     }

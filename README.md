@@ -3,7 +3,7 @@
 ![Diff Pressure Click](http://cdn.mikroe.com/img/click/r-meter-click/r-meter.png)
 
 ---
-[Product Page](http://www.mikroe.com/click/r_meter/)
+[Product Page](http://www.mikroe.com/click/r-meter/)
 
 [Manual Page](http://docs.mikroe.com/R_Meter_click)
 

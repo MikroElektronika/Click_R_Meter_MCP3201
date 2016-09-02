@@ -11,7 +11,17 @@
 
 ### General Description
 
-Description Coming Soon...
+R Meter click is a mikroBUS™ add-on board with circuitry for measuring the value of resistors. The board can be used to measure a wide range of resistors (from 0 to 1 Mega Ohm) The design is based on a non-inverting amplifier circuit, with the measured resistor placed in a feedback loop that influences the gain of the amplifier.
+
+The analog output is fed through a 12-bit ADC with the final output going through the mikroBUS™ SPI interface.
+
+Since the ADC has a limited min-max range (0-2043), R Meter click employs a multiplexer that can adjust the input signal to the amplifier and thus allow the same ADC to measure four different scopes of values (0-1k , 1k-100k, 100k-1M)
+
+The supplied firmware (available on Libstock) automatically scans the ADC value and switches the multiplexer output based on the resistor in place. The multiplexer interfaces directly with the target board MCU through mikroBUS™ S1, S2, and S3 pins (in place of default mikroBUS™ PWM, INT and RST).
+
+Onboard screw terminals are placed to allow the click to be used with multimeter probes.
+
+The board is designed to use a 5V power supply.
 
 
 ---
